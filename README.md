@@ -25,7 +25,7 @@ Sử dụng **Playwright + Python** để kiểm thử hệ thống Mượn sác
 | --- | ---- | --------- | ----------- |
 | 1   |      |           | Nhóm trưởng |
 | 2   |      |           | Thành viên  |
-| 3   |      |           | Thành viên  |
+| 3   |BI11-161|Phan Sỹ Long| Thành viên  |
 | 4   |      |           | Thành viên  |
 
 ---
