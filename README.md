@@ -23,8 +23,8 @@ Sử dụng **Playwright + Python** để kiểm thử hệ thống Mượn sác
 
 | #   | MSSV | Họ và tên | Vai trò     |
 | --- | ---- | --------- | ----------- |
-| 1   |      |           | Nhóm trưởng |
-| 2   |      |           | Thành viên  |
+| 1   | 23BI14160|Nguyễn Ngọc Minh Hiếu| Nhóm trưởng |
+| 2   |23BI141123|Hua Thai Duong| Thành viên  |
 | 3   |BI11-161|Phan Sỹ Long| Thành viên  |
 | 4   |      |           | Thành viên  |
 
