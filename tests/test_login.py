@@ -35,7 +35,7 @@ def test_login_fail_wrong_password(page, test_config):
     enable_flutter_semantics(page)
 
     flutter_fill(page, "Email", test_config["email"])
-    flutter_fill(page, "Mật khẩu", test_config["password"])
+    flutter_fill(page, "Mật khẩu", "wrongpass")
     flutter_click_button(page, "Đăng nhập")
 
 
@@ -56,8 +56,8 @@ def test_login_fail_empty_fields(page, test_config):
     page.goto(test_config["base_url"], wait_until="networkidle", timeout=60000)
     enable_flutter_semantics(page)
 
-    flutter_fill(page, "Email", test_config["email"])
-    flutter_fill(page, "Mật khẩu", test_config["password"])
+    flutter_fill(page, "Email", " ")
+    flutter_fill(page, "Mật khẩu", " ")
     flutter_click_button(page, "Đăng nhập")
 
     wait_for_flutter(page, text="Vui lòng nhập email và mật khẩu")
