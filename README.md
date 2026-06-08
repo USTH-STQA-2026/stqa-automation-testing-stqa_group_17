@@ -194,9 +194,9 @@ CI sẽ thực hiện:
 | TC-05 | Tìm sách — không có kết quả (*No result*)            | `test_search.py`        | ✅ DONE     |
 | TC-06 | Lọc theo thể loại (*Filter by category*)             | `test_search.py`        | ✅ DONE     |
 | TC-07 | Tìm theo tác giả (*Search by author*)                | `test_search.py`        | ✅ DONE     |
-| TC-08 | Mượn sách (*Borrow a book*)                          | `test_borrow_return.py` | 🔴 TODO     |
-| TC-09 | Xem sách đang mượn (*View borrowed books*)           | `test_borrow_return.py` | 🔴 TODO     |
-| TC-10 | Trả sách (*Return a book*)                           | `test_borrow_return.py` | 🔴 TODO     |
+| TC-08 | Mượn sách (*Borrow a book*)                          | `test_borrow_return.py` | ✅ DONE     |
+| TC-09 | Xem sách đang mượn (*View borrowed books*)           | `test_borrow_return.py` | ✅ DONE     |
+| TC-10 | Trả sách (*Return a book*)                           | `test_borrow_return.py` | ✅ DONE     |
 | TC-11 | Đăng xuất (*Logout*)                                 | `test_general.py`       | ✅ DONE     |
 | TC-12 | Chuyển ngôn ngữ sang EN (*Switch language*)          | `test_general.py`       | ✅ DONE     |
 
