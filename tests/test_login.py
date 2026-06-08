@@ -31,16 +31,19 @@ def test_login_success(page, test_config):
 
 def test_login_fail_wrong_password(page, test_config):
     
+    # Access page and enable semantics
     page.goto(test_config["base_url"], wait_until="networkidle", timeout=60000)
     enable_flutter_semantics(page)
 
+    #Fill in email and wrong password, then click login
     flutter_fill(page, "Email", test_config["email"])
     flutter_fill(page, "Mật khẩu", "wrongpass")
     flutter_click_button(page, "Đăng nhập")
 
-
+    #Wait for incorrect password message to appear and take screenshot
     wait_for_flutter(page, text="Mật khẩu không đúng")
     page.screenshot(path=os.path.join(SCREENSHOT_DIR, "login_fail_wrong_password.png"))
+
 
     sem_text= " ".join(page.locator("flt-semantics").all_text_contents())
     has_wrong_password_error= "Mật khẩu không đúng" in sem_text
@@ -53,15 +56,19 @@ def test_login_fail_wrong_password(page, test_config):
 
 def test_login_fail_empty_fields(page, test_config):
     
+    #Access page and enable semantics
     page.goto(test_config["base_url"], wait_until="networkidle", timeout=60000)
     enable_flutter_semantics(page)
 
+    #Fill in email and password fields with empty values then click login
     flutter_fill(page, "Email", " ")
     flutter_fill(page, "Mật khẩu", " ")
     flutter_click_button(page, "Đăng nhập")
 
+    #Wait for empty fields error message to appear and take screenshot
     wait_for_flutter(page, text="Vui lòng nhập email và mật khẩu")
     page.screenshot(path=os.path.join(SCREENSHOT_DIR, "login_fail_empty_fields.png"))
+
 
     sem_text= " ".join(page.locator("flt-semantics").all_text_contents())
     has_empty_fields_error= "Vui lòng nhập email và mật khẩu" in sem_text
