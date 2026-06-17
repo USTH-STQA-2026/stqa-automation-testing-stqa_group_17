@@ -11,6 +11,7 @@
 | **Lớp** | STQA2A |
 | **Học kỳ** | HK2 - 2025 - 2026 |
 | **Hệ thống kiểm thử** | [https://stqa.rbc.vn](https://stqa.rbc.vn) |
+| **Repo** | https://github.com/USTH-STQA-2026/stqa-automation-testing-stqa_group_17 |
 
 | # | MSSV | Họ và tên | Vai trò |
 |---|------|-----------|---------|
