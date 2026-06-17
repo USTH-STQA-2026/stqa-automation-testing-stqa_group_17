@@ -97,10 +97,7 @@ def test_view_borrowed_books(page, test_config):
         Log in → switch to "Mượn / Trả" tab → verify borrowed books are shown.
         (*Đăng nhập → chuyển sang tab "Mượn / Trả" → kiểm tra có sách đang mượn.*)
 
-    Hints (*Gợi ý*):
-        - Click tab: page.locator('flt-semantics[role="tab"][aria-label="Mượn / Trả"]')
-        - Verify: books with "Đang mượn" in aria-label, or "Trả sách" button exists
-          (*Kiểm tra: có sách với aria-label chứa "Đang mượn" hoặc có nút "Trả sách"*)
+    
     """
     # Step 1: Log in
     login(page, test_config)
@@ -139,12 +136,8 @@ def test_return_book(page, test_config):
         Log in → go to "Mượn / Trả" tab → click "Trả sách" → verify book is returned.
         (*Đăng nhập → tab "Mượn / Trả" → click "Trả sách" → kiểm tra sách được trả.*)
 
-    Hints (*Gợi ý*):
-        - Switch to "Mượn / Trả" tab (*Chuyển tab "Mượn / Trả"*)
-        - Find return button: page.locator('flt-semantics[role="button"]:has-text("Trả sách")')
-          (*Tìm nút "Trả sách"*)
-        - Click and verify status change or success message
-          (*Click và kiểm tra sách chuyển trạng thái hoặc có thông báo thành công*)
+    
+          
     """
     # Step 1: Log in
     login(page, test_config)

@@ -1,19 +1,4 @@
-"""
-Search & Filter Tests (*Kiểm thử Tìm kiếm & Lọc sách*) — Library Book Borrowing System (*Hệ thống Mượn sách thư viện*)
 
-Students must complete ALL 4 test cases in this file.
-(*Sinh viên cần hoàn thành TẤT CẢ 4 test case trong file này.*)
-
-Hints (*Gợi ý*):
-    - After logging in, use flutter_fill() to type into the search box
-      (*Sau khi đăng nhập, dùng flutter_fill() để nhập vào ô tìm kiếm*)
-    - Search box aria-label: "Tìm kiếm theo tên sách hoặc tác giả..."
-    - Category filter aria-label: "Lọc theo thể loại (VD: Công nghệ, Kinh tế...)"
-    - Each book card has role="group" and aria-label containing book info
-      (*Mỗi card sách có role="group" và aria-label chứa thông tin sách*)
-    - Use login() helper from conftest.py to log in before testing
-      (*Dùng login() helper từ conftest.py để đăng nhập trước khi test*)
-"""
 import os
 import time
 import pytest
@@ -32,10 +17,6 @@ def test_search_book_by_name(page, test_config):
         Log in → search keyword "Flutter" → verify Flutter books appear in results.
         (*Đăng nhập → tìm kiếm từ khóa "Flutter" → kiểm tra có sách Flutter trong kết quả.*)
 
-    Hints (*Gợi ý*):
-        - login(page, test_config)
-        - flutter_fill(page, "Tìm kiếm theo tên sách hoặc tác giả...", "Flutter")
-        - Verify: page.locator('flt-semantics[aria-label*="Flutter"]').count() > 0
     """
 
     page.goto(test_config["base_url"], wait_until="networkidle", timeout=60000)
@@ -91,12 +72,6 @@ def test_filter_by_category(page, test_config):
         (*Đăng nhập → nhập "Công nghệ" vào ô lọc thể loại → kiểm tra tất cả sách
         hiển thị đều thuộc thể loại Công nghệ.*)
 
-    Hints (*Gợi ý*):
-        - flutter_fill(page, "Lọc theo thể loại (VD: Công nghệ, Kinh tế...)", "Công nghệ")
-        - Get book list: page.locator('flt-semantics[role="group"][aria-label*="Mã: BOOK"]')
-          (*Lấy danh sách sách*)
-        - Loop through each book, verify aria-label contains "Công nghệ"
-          (*Lặp qua từng sách, kiểm tra aria-label chứa "Công nghệ"*)
     """
     page.goto(test_config["base_url"], wait_until="networkidle", timeout=60000)
     enable_flutter_semantics(page)
