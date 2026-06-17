@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/ZpUiBug-)
 # STQA Library Automation — Starter Template
 
 Bài tập thực hành **Kiểm thử Web UI tự động** cho môn **Kiểm thử và Đảm bảo chất lượng phần mềm (STQA)**.
@@ -16,15 +17,15 @@ Sử dụng **Playwright + Python** để kiểm thử hệ thống Mượn sác
 
 |              | Thông tin                    |
 | ------------ | ---------------------------- |
-| **Tên nhóm** | `<!-- VD: Nhóm 1 -->`        |
-| **Lớp**      | `<!-- VD: SE001.P11 -->`     |
-| **Học kỳ**   | `<!-- VD: HK2 2025-2026 -->` |
+| **Tên nhóm** | `Nhóm 17`        |
+| **Lớp**      | `STQA2A`     |
+| **Học kỳ**   | `HK2 - 2025 - 2026` |
 
 | #   | MSSV | Họ và tên | Vai trò     |
 | --- | ---- | --------- | ----------- |
-| 1   |      |           | Nhóm trưởng |
-| 2   |      |           | Thành viên  |
-| 3   |      |           | Thành viên  |
+| 1   | 23BI14160|Nguyễn Ngọc Minh Hiếu| Nhóm trưởng |
+| 2   |23BI141123|Hua Thai Duong| Thành viên  |
+| 3   |BI11-161|Phan Sỹ Long| Thành viên  |
 | 4   |      |           | Thành viên  |
 
 ---
@@ -187,17 +188,17 @@ CI sẽ thực hiện:
 | TC    | Mô tả                                                | File                    | Trạng thái |
 | ----- | ---------------------------------------------------- | ----------------------- | ---------- |
 | TC-01 | Đăng nhập thành công (*Login success*)               | `test_login.py`         | ✅ Mẫu      |
-| TC-02 | Đăng nhập thất bại — sai mật khẩu (*Wrong password*) | `test_login.py`         | 🔴 TODO     |
-| TC-03 | Đăng nhập thất bại — để trống (*Empty fields*)       | `test_login.py`         | 🔴 TODO     |
-| TC-04 | Tìm sách theo tên (*Search by name*)                 | `test_search.py`        | 🔴 TODO     |
-| TC-05 | Tìm sách — không có kết quả (*No result*)            | `test_search.py`        | 🔴 TODO     |
-| TC-06 | Lọc theo thể loại (*Filter by category*)             | `test_search.py`        | 🔴 TODO     |
-| TC-07 | Tìm theo tác giả (*Search by author*)                | `test_search.py`        | 🔴 TODO     |
-| TC-08 | Mượn sách (*Borrow a book*)                          | `test_borrow_return.py` | 🔴 TODO     |
-| TC-09 | Xem sách đang mượn (*View borrowed books*)           | `test_borrow_return.py` | 🔴 TODO     |
-| TC-10 | Trả sách (*Return a book*)                           | `test_borrow_return.py` | 🔴 TODO     |
-| TC-11 | Đăng xuất (*Logout*)                                 | `test_general.py`       | 🔴 TODO     |
-| TC-12 | Chuyển ngôn ngữ sang EN (*Switch language*)          | `test_general.py`       | 🔴 TODO     |
+| TC-02 | Đăng nhập thất bại — sai mật khẩu (*Wrong password*) | `test_login.py`         | ✅ DONE     |
+| TC-03 | Đăng nhập thất bại — để trống (*Empty fields*)       | `test_login.py`         | ✅ DONE     |
+| TC-04 | Tìm sách theo tên (*Search by name*)                 | `test_search.py`        | ✅ DONE     |
+| TC-05 | Tìm sách — không có kết quả (*No result*)            | `test_search.py`        | ✅ DONE     |
+| TC-06 | Lọc theo thể loại (*Filter by category*)             | `test_search.py`        | ✅ DONE     |
+| TC-07 | Tìm theo tác giả (*Search by author*)                | `test_search.py`        | ✅ DONE     |
+| TC-08 | Mượn sách (*Borrow a book*)                          | `test_borrow_return.py` | ✅ DONE     |
+| TC-09 | Xem sách đang mượn (*View borrowed books*)           | `test_borrow_return.py` | ✅ DONE     |
+| TC-10 | Trả sách (*Return a book*)                           | `test_borrow_return.py` | ✅ DONE     |
+| TC-11 | Đăng xuất (*Logout*)                                 | `test_general.py`       | ✅ DONE     |
+| TC-12 | Chuyển ngôn ngữ sang EN (*Switch language*)          | `test_general.py`       | ✅ DONE     |
 
 **Yêu cầu:** Hoàn thành tất cả 11 test case còn lại (TC-02 → TC-12).
 
